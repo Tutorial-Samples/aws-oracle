@@ -1,0 +1,12 @@
+spring:
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+  datasource:
+    url: jdbc:oracle:thin:@//myoracledb.chyvfk4bpva9.us-east-2.rds.amazonaws.com:1521/ORCL
+    username: balaji
+    password: Cognizant-1
