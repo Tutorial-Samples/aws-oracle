@@ -6,6 +6,12 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: create-drop
+  profiles:
+    active: aws
+
+---
+spring:
+  profiles: aws
   datasource:
     url: jdbc:oracle:thin:@//myoracledb.chyvfk4bpva9.us-east-2.rds.amazonaws.com:1521/ORCL
     username: balaji
