@@ -32,7 +32,7 @@ public class UserDataInitializer implements CommandLineRunner {
         saveUser(createUser("Balaji Varadharajan"));
         saveUser(createUser("Pooja Mohanakrishnan"));
         saveUser(createUser("Jiana Balaji"));
-        saveUser(createUser("Joy Varadharajan Balaji"));
+        saveUser(createUser("Joy Varadharajan"));
     }
 
     private CleonUser createUser(String name){
