@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.aws.oracle</groupId>
     <artifactId>aws-oracle</artifactId>
-    <version>0.0.7-SNAPSHOT</version>
+    <version>0.0.8-SNAPSHOT</version>
     <name>aws-oracle</name>
     <description>Demo project for Spring Boot</description>
 
@@ -103,11 +103,7 @@
                         <id>default</id>
                         <goals>
                             <goal>build</goal>
-                            <goal>push</goal>
                         </goals>
-                        <configuration>
-                            <tag>latest</tag>
-                        </configuration>
                     </execution>
                     <execution>
                         <id>default-2</id>
@@ -117,6 +113,16 @@
                         </goals>
                         <configuration>
                             <tag>${project.version}</tag>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>default-3</id>
+                        <goals>
+                            <goal>tag</goal>
+                            <goal>push</goal>
+                        </goals>
+                        <configuration>
+                            <tag>latest</tag>
                         </configuration>
                     </execution>
                 </executions>
