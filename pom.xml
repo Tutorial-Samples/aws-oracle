@@ -122,6 +122,7 @@
                 </executions>
                 <configuration>
                     <repository>vbalaji215/${project.name}</repository>
+                    <useMavenSettingsForAuth>true</useMavenSettingsForAuth>
 <!--                    <tag>${project.version}</tag>-->
 <!--                    <tag>latest</tag>-->
                     <buildArgs>
