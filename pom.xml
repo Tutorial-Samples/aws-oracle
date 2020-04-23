@@ -109,6 +109,7 @@
                 </executions>
                 <configuration>
                     <repository>vbalaji215/${project.name}</repository>
+                    <tag>latest</tag>
                     <tag>${project.version}</tag>
 <!--                    <tag>latest</tag>-->
                     <buildArgs>
